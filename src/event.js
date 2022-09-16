@@ -14,6 +14,9 @@ const event = {
             return
         }
         this.listenMap[key] = listener
+        return () => {
+            
+        }
     },
     /**
      * 声明一个一次性的监听
